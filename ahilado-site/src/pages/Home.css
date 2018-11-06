@@ -1,0 +1,37 @@
+html,
+body {
+  background-color: black;
+}
+
+.logo {
+  height: 400px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 65%);
+  z-index: 1;
+  transition: 0.5s ease-in, 0.5s ease-out;
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+}
+
+.photo {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  float: left;
+  width: 50%;
+  height: 100vh;
+  transition: 0.5s ease-in, 0.5s ease-out;
+
+  -webkit-filter: brightness(0.5);
+  filter: brightness(0.5);
+  transition: 0.5s ease-in, 0.5s ease-out;
+}
+
+a:hover .photo {
+  width: 100%;
+  -webkit-filter: brightness(1);
+  filter: brightness(1);
+}
