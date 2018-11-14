@@ -15,157 +15,32 @@ body {
   filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
 }
 
-.containerBay {
-  position: absolute;
-  width: 50%;
-  height: 100vh;
-}
-
-.photoBayHalf {
-  display: block;
-  width: 100%;
-  height: 100vh;
-  float: left;
-  height: 100vh;
-  opacity: 0.5;
-}
-
-.overlayBay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-image: url("../images/bayBridge.jpg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  width: 0;
-  height: 100%;
-  transition: 0.5s ease;
-}
-
-.containerBay:hover .overlayBay {
-  width: 200%;
-  z-index: 1;
-}
-
-.containerCity {
-  position: absolute;
-  width: 50%;
-  height: 100vh;
-  left: 50%;
-}
-
-.photoCityHalf {
-  display: block;
-  width: 100%;
-  height: 100vh;
-  float: right;
-  opacity: 0.5;
-}
-
-.overlayCity {
-  position: absolute;
-  bottom: 0;
-  left: 100%;
-  right: 0;
-  background-image: url("../images/seattle.jpg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  width: 0;
-  height: 100%;
-  transition: 0.5s ease;
-}
-
-.containerCity:hover .overlayCity {
-  width: 200%;
-  left: -100%;
-  z-index: 1;
-}
-
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  white-space: nowrap;
-}
-
-/* .photoBay {
+.photoBay {
   float: left;
   position: absolute;
   width: 50%;
   height: 100vh;
-  -webkit-transition: width 2s;
-  transition: width 2s;
-}
-
-.photoBay:hover {
-  width: 100%;
+  -webkit-filter: brightness(0.5);
+  filter: brightness(0.5);
+  -webkit-transition: width 0.7s;
+  transition: width 0.7s;
 }
 
 .photoCity {
   float: right;
-  position: absolute;
+  position: relative;
   width: 50%;
   height: 100vh;
-  left: 50%;
-  -webkit-transition: width 2s;
-  transition: width 2s;
+  -webkit-filter: brightness(0.5);
+  filter: brightness(0.5);
+  -webkit-transition: width 0.7s;
+  transition: width 0.7s;
 }
 
+.photoBay:hover,
 .photoCity:hover {
   width: 100%;
-  left: 0;
-} */
-
-.photo {
-  padding: 0;
-  display: block;
-  align-items: center;
-  text-align: center;
-  float: left;
-  width: 50%;
-  height: 100vh;
-  -webkit-transition: width 2s;
-  transition: width 2s;
-  /* filter: brightness(0.5); */
-
-  /* -webkit-filter: brightness(0.5);
-  filter: brightness(0.5);
-  transition: 0.5s ease-in, 0.5s ease-out;  */
-}
-
-a:hover .photo {
-  width: 100%;
-  /* -webkit-filter: brightness(1);
-  filter: brightness(1); */
-}
-
-.phot {
-  padding: 0;
-  display: block;
-  align-items: center;
-  text-align: center;
-  float: right;
-  width: 50%;
-  height: 100vh;
-  -webkit-transition: width 2s;
-  transition: width 2s;
-  /* filter: brightness(0.5); */
-
-  /* -webkit-filter: brightness(0.5);
-  filter: brightness(0.5);
-  transition: 0.5s ease-in, 0.5s ease-out;*/
-}
-
-a:hover .phot {
-  width: 100%;
-  /* -webkit-filter: brightness(1);
-  filter: brightness(1); */
+  -webkit-filter: brightness(1);
+  filter: brightness(1);
+  z-index: 1;
 }
